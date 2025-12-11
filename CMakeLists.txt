@@ -12,6 +12,8 @@ add_library(
     src/math/add.c 
     src/search/linear_search.c 
     src/search/binary_search.c
+    src/vector/vector.c
+    src/vector/vector_int_utils.c  
 )
 
 target_include_directories(dsalib PUBLIC include)

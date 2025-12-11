@@ -22,3 +22,13 @@ add_test(NAME test_stack COMMAND test_stack)
 add_executable(test_queue test_queue.c)
 target_link_libraries(test_queue PRIVATE dsalib)
 add_test(NAME test_queue COMMAND test_queue)
+
+# test_vector
+add_executable(test_vector test_vector.c)
+target_link_libraries(test_vector PRIVATE dsalib)
+add_test(NAME test_vector COMMAND test_vector)
+
+# test_vector_int_utils
+add_executable(test_vector_int_utils test_vector_int_utils.c)
+target_link_libraries(test_vector_int_utils PRIVATE dsalib)
+add_test(NAME test_vector_int_utils COMMAND test_vector_int_utils)
