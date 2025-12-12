@@ -11,6 +11,14 @@ typedef struct {
     size_t capacity;
 } dsalib_vector_t;
 
+/**
+ * Creates a generic dynamic vector.
+ *
+ * @param element_size Size of each element in bytes
+ * @param initial_capacity Initial capacity (0 uses default)
+ * @return Pointer to vector or NULL if allocation fails
+ */
+
 dsalib_vector_t* dsalib_vector_create(size_t element_size, size_t initial_capacity);
 void dsalib_vector_destroy(dsalib_vector_t* vec);
 

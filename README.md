@@ -196,3 +196,12 @@ docker compose run --rm dev rm -rf build
 4. Run tests frequently as you develop
 5. Use `valgrind` to catch memory leaks early
 6. Keep the interactive shell open during active development, then `exit` when done
+
+## Build and Test
+rm -rf build
+cmake -S . -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+
+## Run demo
+./build/vector_demo
