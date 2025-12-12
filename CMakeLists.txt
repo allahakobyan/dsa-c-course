@@ -13,10 +13,13 @@ add_library(
     src/search/linear_search.c 
     src/search/binary_search.c
     src/vector/vector.c
-    src/vector/vector_int_utils.c  
+    src/vector/vector_int_utils.c
 )
 
 target_include_directories(dsalib PUBLIC include)
+
+add_executable(vector_demo demo/vector_demo.c)
+target_link_libraries(vector_demo dsalib)
 
 add_subdirectory(playground)
 
